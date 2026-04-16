@@ -1,0 +1,25 @@
+{
+  "interval_seconds": 15,
+  "ports": [
+    {
+      "host": "localhost",
+      "port": 8080,
+      "webhooks": [
+        "https://hooks.example.com/portwatch"
+      ]
+    },
+    {
+      "host": "db.internal",
+      "port": 5432,
+      "shell": "echo 'Port {{.Port}} on {{.Host}} is now {{.State}}'"
+    },
+    {
+      "host": "localhost",
+      "port": 6379,
+      "webhooks": [
+        "https://hooks.example.com/redis-alert"
+      ],
+      "shell": "./scripts/notify.sh"
+    }
+  ]
+}
