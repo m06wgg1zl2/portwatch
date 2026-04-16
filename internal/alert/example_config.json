@@ -1,0 +1,6 @@
+{
+  "host": "redis.internal",
+  "port": 6379,
+  "level": "warn",
+  "message": "port became unreachable"
+}
