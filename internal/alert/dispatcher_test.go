@@ -58,3 +58,21 @@ func TestDispatch_NoHandlers(t *testing.T) {
 	// Should complete without error
 	d.Dispatch(New("localhost", 80, LevelInfo, "ok"))
 }
+
+func TestDispatch_PanicHandlerAllowsOtherHandlers(t *testing.T) {
+	d := NewDispatcher()
+	var called int64
+
+	d.Register(func(a Alert) {
+		panic("intentional panic")
+	})
+	d.Register(func(a Alert) {
+		atomic.AddInt64(&called, 1)
+	})
+
+	d.Dispatch(New("localhost", 443, LevelWarn, "test"))
+
+	if called != 1 {
+		t.Errorf("expected non-panicking handler to be called, got %d calls", called)
+	}
+}
