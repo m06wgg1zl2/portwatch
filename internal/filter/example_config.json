@@ -1,0 +1,9 @@
+{
+  "rules": [
+    {
+      "from_hour": 8,
+      "to_hour": 20,
+      "states": ["closed"]
+    }
+  ]
+}
