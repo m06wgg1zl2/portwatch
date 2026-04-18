@@ -35,6 +35,8 @@ portwatch --port 8080 --interval 10s \
 | `--interval` | Poll interval | `5s` |
 | `--on-open` | Shell command or webhook URL to trigger when port opens | — |
 | `--on-close` | Shell command or webhook URL to trigger when port closes | — |
+| `--config` | Path to a YAML config file | — |
+| `--timeout` | TCP dial timeout per attempt | `3s` |
 
 **Example config file (`portwatch.yaml`):**
 
@@ -42,6 +44,7 @@ portwatch --port 8080 --interval 10s \
 host: localhost
 port: 5432
 interval: 10s
+timeout: 3s
 on_open: "echo 'DB is up'"
 on_close: "alertmanager notify --service postgres"
 ```
