@@ -1,0 +1,5 @@
+{
+  "failure_threshold": 3,
+  "success_threshold": 1,
+  "open_timeout_seconds": 10
+}
