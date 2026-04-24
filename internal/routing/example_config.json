@@ -1,0 +1,6 @@
+{
+  "routes": [
+    { "name": "primary",  "weight": 8 },
+    { "name": "fallback", "weight": 2 }
+  ]
+}
