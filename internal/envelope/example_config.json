@@ -1,0 +1,8 @@
+{
+  "comment": "Envelope wraps an alert with routing metadata. No configuration is required; fields are set programmatically.",
+  "default_priority": 0,
+  "label_examples": {
+    "region": "eu-west",
+    "env": "production"
+  }
+}
