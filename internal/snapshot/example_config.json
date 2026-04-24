@@ -4,5 +4,17 @@
     "port": 8080,
     "open": true,
     "updated_at": "2024-01-01T00:00:00Z"
+  },
+  "localhost:5432": {
+    "host": "localhost",
+    "port": 5432,
+    "open": true,
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  "localhost:9090": {
+    "host": "localhost",
+    "port": 9090,
+    "open": false,
+    "updated_at": "2024-01-01T00:00:00Z"
   }
 }
