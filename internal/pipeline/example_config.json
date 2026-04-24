@@ -1,0 +1,6 @@
+{
+  "pipeline": {
+    "stages": ["time-filter", "cooldown", "sampler"],
+    "comment": "Stages are evaluated left-to-right; the first stage that blocks the alert halts the pipeline."
+  }
+}
