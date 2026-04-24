@@ -1,0 +1,6 @@
+{
+  "window": {
+    "size": "60s",
+    "comment": "Rolling duration for the sliding-window counter. Events older than this value are automatically evicted."
+  }
+}
