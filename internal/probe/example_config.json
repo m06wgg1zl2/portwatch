@@ -1,0 +1,6 @@
+{
+  "max_attempts": 3,
+  "initial_wait": "200ms",
+  "max_wait": "5s",
+  "exponential": true
+}
