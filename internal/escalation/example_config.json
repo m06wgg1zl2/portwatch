@@ -1,0 +1,7 @@
+{
+  "window": "30s",
+  "levels": [
+    {"name": "warn",     "threshold": 3},
+    {"name": "critical", "threshold": 8}
+  ]
+}
