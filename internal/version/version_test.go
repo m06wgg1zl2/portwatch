@@ -46,3 +46,19 @@ func TestGet_ReturnsInfo(t *testing.T) {
 		t.Errorf("expected BuildDate=2024-06-15, got %s", info.BuildDate)
 	}
 }
+
+func TestGet_MatchesString(t *testing.T) {
+	Version = "1.0.0"
+	Commit = "cafebabe"
+	BuildDate = "2024-03-20"
+
+	info := Get()
+	s := String()
+
+	// Ensure the fields returned by Get are all present in String output.
+	for _, field := range []string{info.Version, info.Commit, info.BuildDate} {
+		if !strings.Contains(s, field) {
+			t.Errorf("expected %q to appear in String() output: %s", field, s)
+		}
+	}
+}
