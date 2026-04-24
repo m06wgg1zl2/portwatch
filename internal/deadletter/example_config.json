@@ -1,0 +1,5 @@
+{
+  "dead_letter": {
+    "max_size": 200
+  }
+}
