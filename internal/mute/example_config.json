@@ -1,0 +1,6 @@
+{
+  "mute": {
+    "default_duration_minutes": 60,
+    "max_entries": 500
+  }
+}
