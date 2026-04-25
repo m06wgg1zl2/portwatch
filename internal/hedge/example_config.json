@@ -1,0 +1,4 @@
+{
+  "soft_timeout_ms": 50,
+  "hard_timeout_ms": 500
+}
