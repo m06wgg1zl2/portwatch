@@ -48,3 +48,15 @@ func (r *Reporter) Summary(results []Result) {
 			ok, len(results), strings.Join(errs, ", "))
 	}
 }
+
+// HasErrors reports whether any result in the slice contains a non-nil error.
+// It is a convenience helper for callers that need to decide on an exit code
+// or take a conditional action without iterating over results themselves.
+func HasErrors(results []Result) bool {
+	for _, res := range results {
+		if res.Error != nil {
+			return true
+		}
+	}
+	return false
+}
