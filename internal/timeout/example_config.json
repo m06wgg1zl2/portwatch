@@ -1,0 +1,8 @@
+{
+  "default": "5s",
+  "overrides": {
+    "webhook": "3s",
+    "shell": "10s",
+    "probe": "2s"
+  }
+}
