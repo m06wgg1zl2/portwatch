@@ -1,9 +1,16 @@
 {
   "rules": [
     {
+      "comment": "Block closed ports during business hours (8am-8pm)",
       "from_hour": 8,
       "to_hour": 20,
       "states": ["closed"]
+    },
+    {
+      "comment": "Alert on filtered ports outside business hours",
+      "from_hour": 20,
+      "to_hour": 8,
+      "states": ["filtered"]
     }
   ]
 }
