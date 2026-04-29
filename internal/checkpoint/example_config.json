@@ -1,0 +1,7 @@
+{
+  "comment": "Checkpoint has no external configuration; it is constructed via New().",
+  "usage": {
+    "description": "Call IsDirty(key, current) to detect changes, Save(key, current) to mark clean.",
+    "example_keys": ["port:8080", "port:9090"]
+  }
+}
