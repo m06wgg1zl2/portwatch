@@ -1,0 +1,4 @@
+{
+  "interval": "30s",
+  "missed_threshold": 3
+}
