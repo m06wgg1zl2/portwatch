@@ -1,0 +1,5 @@
+{
+  "comment": "Shard distributes keys across buckets using FNV-1a hashing.",
+  "buckets": 8,
+  "self": 0
+}
