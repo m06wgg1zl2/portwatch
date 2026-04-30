@@ -1,0 +1,4 @@
+{
+  "comment": "digest module — fingerprint caching for alert deduplication",
+  "ttl": "10m"
+}
